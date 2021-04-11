@@ -29,17 +29,17 @@ function App() {
         <ThemeProvider theme={theme}>
           <MainLayout>
             <Switch>
-              <Route exact path={process.env.PUBLIC_URL + '/'} component={Homepage} />
-              <Route exact path={process.env.PUBLIC_URL + '/login'} component={Login} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables'} component={Tables} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables/booking/book/:id'} component={BookingInfo} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables/booking/new'} component={BookingNew} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables/events/event/:id'} component={EventsInfo} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables/events/new'} component={EventsNew} />
-              <Route exact path={process.env.PUBLIC_URL + '/waiter/ordering/order/:id'} component={OrderInfo} />
-              <Route exact path={process.env.PUBLIC_URL + '/waiter/order/new'} component={OrderNew} />
-              <Route exact path={process.env.PUBLIC_URL + '/waiter'} component={Waiter} />
-              <Route exact path={process.env.PUBLIC_URL + '/kitchen'} component={Kitchen} />
+              <Route exact path={'/'} component={Homepage} />
+              <Route exact path={'/login'} component={Login} />
+              <Route exact path={'/tables'} component={Tables} />
+              <Route exact path={'/tables/bookings/:id'} component={BookingInfo} />
+              <Route exact path={'/tables/booking/new'} component={BookingNew} />
+              <Route exact path={'/tables/events/:id'} component={EventsInfo} />
+              <Route exact path={'/tables/event/new'} component={EventsNew} />
+              <Route exact path={'/waiter/orders/:id'} component={OrderInfo} />
+              <Route exact path={'/waiter/order/new'} component={OrderNew} />
+              <Route exact path={'/waiter'} component={Waiter} />
+              <Route exact path={'/kitchen'} component={Kitchen} />
             </Switch>
           </MainLayout>
         </ThemeProvider>
