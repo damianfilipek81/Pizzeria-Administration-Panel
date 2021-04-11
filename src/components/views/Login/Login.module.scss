@@ -2,4 +2,24 @@
 
 .component {
   padding: $base-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 128px);
+}
+
+.login {
+  display: inline-flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px 70px;
+  h4 {
+    margin: 5px 0;
+  }
+  a {
+    margin-top: 5px;
+  }
 }
