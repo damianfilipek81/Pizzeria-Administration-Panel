@@ -8,10 +8,10 @@ const Login = () => {
   return (
     <div className={styles.component}>
       <form className={styles.login}>
-        <h4>Login</h4>
-        <TextField id="standard-basic" label="Login" />
-        <TextField id="standard-basic" label="Password" />
-        <Button variant="outlined" component={Link} to={`/`}>Login</Button>
+        <h2>Sign in</h2>
+        <TextField id="standard-basic" variant="outlined" label="Login" />
+        <TextField id="standard-basic" variant="outlined" label="Password" />
+        <Button variant="contained" color="primary" component={Link} to={`/`} >Login</Button>
       </form>
     </div>
   );

@@ -3,7 +3,6 @@ import styles from './Homepage.module.scss';
 import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import Typography from '@material-ui/core/Typography';
 import ListItemText from '@material-ui/core/ListItemText';
 
 const demoContent = [
@@ -31,7 +30,7 @@ const demoOrders = {
 
 const Homepage = () => {
   return (
-    <Paper className={styles.component}>
+    <Paper className={styles.component} elevation={3}>
       <h2>Todays orders statistics</h2>
       <div className={styles.wrapper}>
         <p>Locally orders: {demoOrders.locally}</p>
