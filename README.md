@@ -1,5 +1,5 @@
 # Development
-https://trusting-lumiere-a95a07.netlify.app/
+
 ## URLe dostępne dzięki yarn start
 
 http://localhost:3000 - bieżący projekt, czyli panel administracyjny (webpack-dev-server)
